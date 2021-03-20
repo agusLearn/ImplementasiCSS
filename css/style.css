@@ -4,51 +4,90 @@
     padding: 0;
 }
 
-
 nav{
-    background-color: grey;
-    display: inline-block;
     width: 100%;
-}
-
-nav a{
-    text-decoration: none;
-    color: white;
+    background-color: grey;
+    overflow: hidden;
 }
 
 nav ul{
-    list-style-type: none;
-    overflow: hidden;
-    padding: 14px;
+    margin: 0;
+    padding: 0;
+    padding: 10px;
 }
 
 nav ul li{
-    display: inline-block;
+    list-style-type: none;
+    display: inline;
+    font-size: 20px;
 }
 
 nav ul li a{
-    padding: 14px 16px;
+    text-decoration: none;
+    font-family: serif;
+    padding: 10px;
+    color: white;
 }
 
 nav ul li a:hover{
-    background-color: ivory;
+    background-color: rgb(68, 65, 65);
 }
 
+
+/* Brand */
 .box-brand{
+    display: inline-block;
     float: left;
-    width: 11.11%;
-    padding: 14px 16px;
+    padding: 10px;
+    text-decoration: none;
+    color: white;
+    font-size: 20px;
 }
 
-.box-right{
+.box-navigasi{
     float: right;
 }
 
-.form-pencarian{
-    padding: 14px 16px; 
+/* Toogle */
+.toggle-btn{
+    display: none;
 }
 
-.form-pencarian form{
-    text-align: center;
-}
+@media only screen and (max-width: 500px){
 
+    .box-brand{
+        display: block;
+        text-align: center;
+        padding: 10px;
+        width: 100%;
+    }
+
+    nav ul{
+        display: none;
+        padding: 0;
+    }
+    nav ul li{
+        margin: 0;
+        display: inline-block;
+        text-align: center;
+        padding: 10px 0;
+        width: 100%;
+    }
+    nav ul li:hover{
+        background-color: rgb(68, 65, 65);
+    }
+    .box-navigasi{
+        float: none;
+    }
+
+    .toggle-btn{
+        display: block;
+        position: absolute;
+        float: right;
+        font-size: 20px;
+        width: 30px;
+        right: 5px;
+        top: 7px;
+    }
+    
+}
