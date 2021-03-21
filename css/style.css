@@ -60,7 +60,7 @@ nav ul li a:hover{
     clear: both;
     display: inline-table;
 }
-[class="col-"]{
+[class*="col-"]{
     padding: 15px;
     float: left;
 }
@@ -102,6 +102,146 @@ nav ul li a:hover{
     width: 100%;
 }
 
+/* CSS Halaman Login */
+
+.text-titleLogin, .form-loginn{
+    font-family: 'Noto Sans', sans-serif;
+}
+
+.text-titleLogin{
+    text-align: center;
+    margin-left: 50px;
+    margin-top: 60px;
+}
+
+.text-titleLogin img{
+    width: 100%;
+    height: auto;
+}
+
+.text-titleLogin p{
+    margin-top: -30px;
+}
+
+.text-titleLogin button{
+    display: none;
+}
+
+/* Css Form Login */
+.form-loginn{
+    width: auto;
+    margin: 0 50px;
+    margin-top: 80px;
+    border: 1px solid rgba(0, 0, 0, 0.9);
+    border-radius: 10px;
+    padding: 14px 20px;
+    box-shadow: 1px 1px 5px 2px rgba(122, 119, 119, 0.7);
+}
+
+.form-loginn h3{
+    text-align: center;
+    margin-bottom: 10px;
+}
+
+.form-loginn input[type=text], input[type=password]{
+    width: 100%;
+    padding: 10px 15px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    margin: 10px 0;
+}
+
+.posisitionBtnForm{
+    text-align: right;
+    margin-top: 20px;
+}
+
+.posisitionBtnForm button[type=submit], button[type=reset]{
+    background-color: blue;
+    border: none;
+    padding: 10px 20px;
+    color: white;
+    font-size: 15px; 
+    margin: 5px;
+}
+
+/* Media Query Untuk NotePad */
+@media only screen and (max-width:  780px){
+
+    
+     /* Css Halaman Login Mobile */
+     .text-titleLogin{
+        margin: auto;
+        margin-top: 40px;
+    }
+
+    .text-titleLogin p{
+        margin-top: -30px;
+    }
+    .text-titleLogin span{
+        display: block;
+    }
+
+    .text-titleLogin img{
+        width: 600px;
+        height: 350px;
+        margin-top: 20px;
+    }
+
+    .text-titleLogin button{
+       display: inline-block;
+       color: white;
+       background-color: rgb(39, 39, 247);
+       font-size: 15px;
+       border: none;
+       border-radius: 12px;
+       padding: 10px 15px;
+       margin-top: 30px;
+    }
+    .text-titleLogin button:hover{
+        background-color: rgb(31, 31, 207);
+     }
+
+        /* Grid System untuk Notepad */
+    .col-1-sml{
+        width: 8.33%;
+    }
+    .col-2-sml{
+        width: 16.66%;
+    }
+    .col-3-sml{
+        width: 25%;
+    }
+    .col-4-sml{
+        width: 33.33%;
+    }
+    .col-5-sml{
+        width: 41.66%;
+    }
+    .col-6-sml{
+        width: 50%;
+    }
+    .col-7-sml{
+        width: 58.33%;
+    }
+    .col-8-sml{
+        width: 66.66;
+    }
+    .col-9-sml{
+        width: 75%;
+    }
+    .col-10-sml{
+        width: 83.99%;
+    }
+    .col-11-sml{
+        width: 91.66%;
+    }
+    .col-12-sml{
+        width: 100%;
+    }
+}
+
+
 @media only screen and (max-width: 500px){
 
     .box-brand{
@@ -138,5 +278,61 @@ nav ul li a:hover{
         right: 5px;
         top: 7px;
     }
+
+    /* Css Halaman Login Mobile */
+    .text-titleLogin{
+        margin: auto;
+        margin-top: 70px;
+    }
+
+    .text-titleLogin button{
+       display: inline-block;
+       margin-top: 30px;
+    }
+
+     .text-titleLogin img{
+        width: 100%;
+        height: auto;
+    }
+
+    /* Grid System untuk Mobile */
+    .col-1-sm{
+        width: 8.33%;
+    }
+    .col-2-sm{
+        width: 16.66%;
+    }
+    .col-3-sm{
+        width: 25%;
+    }
+    .col-4-sm{
+        width: 33.33%;
+    }
+    .col-5-sm{
+        width: 41.66%;
+    }
+    .col-6-sm{
+        width: 50%;
+    }
+    .col-7-sm{
+        width: 58.33%;
+    }
+    .col-8-sm{
+        width: 66.66;
+    }
+    .col-9-sm{
+        width: 75%;
+    }
+    .col-10-sm{
+        width: 83.99%;
+    }
+    .col-11-sm{
+        width: 91.66%;
+    }
+    .col-12-sm{
+        width: 100%;
+    }
+
+    
     
 }

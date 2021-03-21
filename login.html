@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Login Mahasiswa</title>
+
+    <!-- Font Google -->
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans&display=swap" rel="stylesheet">
+
+    <!-- Style Css Buatan Sendiri -->
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+
+    <!-- Halaman Title -->
+    <div class="row">
+        <div class="col-6 col-12-sml col-12-sm">
+            <div class="text-titleLogin">
+                <h2>Universitas Islam Indonesia </h2>
+                <span class="title-span">GateWay</span>
+                <img src="img/studentsLogin.jpg" alt="">
+                <p>Situs Data Pribadi Mahasiswa <br> <b>Universitas Islam Indonesia</b></p>
+
+                <!-- button Masuk tampilan Mobile -->
+                <button class="button-loginMobile">Login</button>
+            </div>
+        </div>
+
+        <!-- Form Login -->
+        <div class="col-6 col-12-sml col-12-sm">
+            <div class="form-loginn">
+                <h3>Login Mahasiswa</h3>
+                <form action="">
+                    <label for="nim">NIM</label>
+                    <input type="text" placeholder="Masukan NIM Anda">
+
+                    <label for="pw">Password</label>
+                    <input type="password" placeholder="Masukan Password Anda" id="pw">
+
+                    <input type="checkbox" id="showPW">
+                    <label for="showPW">Show Password</label>
+
+                    <div class="posisitionBtnForm">
+                        <button type="reset">Reset</button>
+                        <button type="submit">Sign in</button>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+
+
+    <!-- Javascript Library -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+
+    <script>
+      $(document).ready(function(){
+          $('input[type=checkbox]').on('click', function(){
+                var check = this.type;
+                console.log(check);
+                if (check == 'checkbox') {
+                    $('#pw').get(0).type = 'text';
+                }else{
+                    $("input:checkbox:not(:checked)")
+                    $('#pw').get(0).type = 'password';
+                }
+          });
+
+      });
+    </script>
+
+</body>
+</html>
