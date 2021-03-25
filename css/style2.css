@@ -1,0 +1,188 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: 'Comic Neue', cursive;
+}
+
+.navigasi{
+    width: 100%;
+    display: flex;
+    padding: 8px 0;
+}
+
+.navigasi a{
+    text-decoration: none;
+    font-weight: bold;
+    color: rgb(94, 91, 91);
+}
+
+/* CSS untuk Branded */
+.navigasi .branded{
+    padding: 14px 16px;
+}
+
+.navigasi .branded span{
+    color: #ffa31a;
+}
+
+
+
+/* Menu Tengah */
+.menu-tengah{
+    display: flex;
+    margin: auto;
+}
+
+
+.navigasi ul{
+    list-style-type: none;
+}
+
+.navigasi ul li{
+    display: inline-block;
+    padding: 11px 14px;
+}
+
+.navigasi ul li:hover::after{
+    content: "";
+    display: block;
+    background-color: #ffa31a;
+    border: 1px solid #ffa31a;
+    width: 30%;
+    margin: auto;
+}
+
+
+/* CSS form Search yang ada di Navigasi Bar */
+.navigasi form{
+    padding: 5px 14px;
+}
+.navigasi input[type=text]{
+    padding: 8px 16px;
+    border: 1px solid #ccc;
+    border-radius: 14px 0 0 14px;
+    border-right: none;
+}
+
+.navigasi input[type=text]:focus{
+   outline: none;
+}
+
+.navigasi button{
+    padding: 9px 10px;
+    background-color: none;
+    border: none;
+    margin-left: -5px;
+    border-left: none;
+    border-radius: 0 0 14px 0;
+}
+
+
+/* Menu navgiasi Paling Kanan */
+.navigasi .menu-right{
+    margin-left: auto;
+}
+
+.navigasi .menu-right ul li {
+    padding-right: 20px;
+}
+
+/* Penutup CSS untuk Navigasi Bar */
+
+
+
+/* CSS Untuk Content */
+
+.container{
+    width: 90%;
+    margin: auto;
+}
+
+.menu-content ul{
+    list-style-type: none;
+}
+
+.menu-content ul li{
+    display: inline-block;
+   
+}
+
+.menu-content ul li a{
+    text-decoration: none;
+    padding: 10px 15px;
+    color: black;
+    font-weight: bold;
+    font-family: 'Open Sans', sans-serif !important;
+}
+
+.menu-content ul li a:hover{
+    background-color: #ffa31a;
+    border-radius:  14px 0 14px 14px;
+    color: white;
+}
+
+
+
+
+
+/* Grid System Desktop*/
+.row::after{
+    content : "";
+    clear: both;
+    display: inline-table;
+}
+
+[class*="col-d-"]{
+    padding: 15px;
+    float: left;
+}
+
+.col-d-1{
+    width: 8.33%;
+}
+
+.col-d-2{
+    width: 16.66%;
+}
+
+.col-d-3{
+    width: 25%;
+}
+
+.col-d-4{
+    width: 33.33%;
+}
+
+.col-d-5{
+    width: 41.66%;
+}
+
+.col-d-6{
+    width: 50%;
+}
+
+.col-d-7{
+    width: 58.33%;
+}
+
+.col-d-8{
+    width: 66.66%;
+}
+
+.col-d-9{
+    width: 75%;
+}
+
+.col-d-10{
+    width: 83.99%;
+}
+
+.col-d-11{
+    width: 91.66%;
+}
+.col-d-12{
+    width: 100%;
+}
+
+/* Penutup Grid Syste */
