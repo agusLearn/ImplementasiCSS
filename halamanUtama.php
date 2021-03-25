@@ -34,7 +34,7 @@
                     <a href="#">Burger</a>
                 </li>
                 <li>
-                    <a href="#">Wuffle</a>
+                    <a href="#">Waffle</a>
                 </li>
                 <li>
                     <a href="#">Beferage</a>
@@ -70,10 +70,9 @@
 
         <div class="row menu-content">
 
-            <!-- Content Sebelah Kiri -->
-            <div class="col-d-9">
+            <div class="col-d-12">
                 <div class="row">
-                    <div class="col-d-12">
+                    <div class="col-d-9">
                         <ul>
                             <li>
                                 <a href="#">Allvariant</a>
@@ -90,32 +89,69 @@
                         </ul>
                     </div>
 
-                    <!-- Gambar Makanan -->
-                    <div class="col-d-12">
-                        
-                    </div>
-
-                </div>
-            </div>
-
-            <!-- Content Sebelah Kanan -->
-            <div class="col-d-3">
-
-                <div class="row">
-
-                    <div class="col-d-12">
+                    <div class="col-d-3">
                         <h1>Original Waffle</h1>
                     </div>
+                </div>
+            </div>
 
-                    <div class="col-d-12">
+            <!-- Content Food -->
+            <div class="col-d-12">
+                <div class="row">
+
+                    <!-- Card Konten menu -->
+                    <div class="col-d-3">
+                        <div class="row">
+
+                            <div class="col-d-6">
+                                <div class="card-food">
+                                    <img src="img/pencake1.jpg" alt="Pencake Strawberry">
+                                    <h5>Pencake Strawberry</h5>
+                                </div>
+                            </div>
+
+                            <div class="col-d-6">
+                                <div class="card-food">
+                                    <img src="img/pencake2.jpg" alt="Pencake Strawberry">
+                                    <h5>Pencake Strawberry</h5>
+                                </div>
+                            </div>
+
+                            <div class="col-d-6">
+                                <div class="card-food">
+                                    <img src="img/burger1.jpg" alt="Big Burger">
+                                    <h5>Black Big Burger</h5>
+                                </div>
+                            </div>
+
+                            <div class="col-d-6">
+                                <div class="card-food">
+                                    <img src="img/waffle2.jpg" alt="Butter Pencake">
+                                    <h5>Wuffle Strawberry</h5>
+                                </div>
+                            </div>
+
+                        </div>
+                    </div>
+
+                    <!-- Gambar Menu -->
+                    <div class="col-d-6">
+
+                        <div class="big-cardFood" id="bigCardFood">
+                            <img src="img/pencake1.jpg" alt="Pencake Strawberry">
+                        </div>
+                    </div>
+
+                    <!-- Penjelasan Menu -->
+                    <div class="col-d-3">
                         <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                            Eveniet minus distinctio est voluptate voluptatum repellat.
-                            Minus magni, delectus veniam labore iure id pariatur illum nemo
-                            reiciendis nisi neque? Animi, debitis!</p>
+                            Dicta reprehenderit fugiat hic accusamus voluptate accusantium
+                            nemo modi veritatis, sit iusto
+                            architecto culpa quidem et atque debitis quasi ad praesentium veniam!</p>
                     </div>
                 </div>
-
             </div>
+
         </div>
 
     </div>

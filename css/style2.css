@@ -123,6 +123,40 @@
 }
 
 
+/* Card Food Content */
+
+.card-food{
+    width: 100%;
+    height: 100%;
+    border: none;
+    border-radius: 15px 15px 0 0;
+    padding: 3px;
+}
+
+.card-food:hover{
+    background-color: rgb(233, 229, 229);
+}
+
+.card-food > img{
+    width: 100%;
+    height: 100%;
+    border-radius: 15px 15px 0 0;
+}
+
+.card-food > h5{
+    text-align: center;
+}
+
+.big-cardFood{
+    padding: 5px;
+}
+
+.big-cardFood img{
+    width: 100%;
+    height: auto;
+    border-radius: 
+}
+
 
 
 
