@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Halaman Dashboard</title>
+
+    <!-- Library CSS Font Awesome Online -->
+    <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css"
+        integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous" />
+
+    <!-- Library Google Font Online -->
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Comic+Neue:wght@300&display=swap" rel="stylesheet">
+
+    <!-- CSS buatan Sendiri -->
+    <link rel="stylesheet" href="css/style2.css">
+</head>
+
+<body>
+    <nav class="navigasi color-bg position-fi">
+        <a href="#" class="branded txt-color"><span>Branded</span></a>
+        <div class="menu-right">
+            <ul>
+                <li>
+                    <a href="#" class="txt-color"><i class="fas fa-shopping-basket"></i></a>
+                </li>
+                <li>
+                    <a href="#" class="drp-down txt-color"><i class="fas fa-user-circle"></i> <i class="fa fa-caret-down"></i></a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+
+
+    <!-- CSS vertical -->
+    <section class="nav-vertical color-bg">
+        <ul>
+            <li>
+                <a href="#" class="txt-color">Dashboard</a>
+            </li>
+            <li>
+                <a href="#" class="txt-color" id="drop-submenu">Display Main <span><i class="fas fa-angle-down"></i></span></a>
+                <div id="subMenu">
+                    <ul>
+                        <li>
+                            <a href="#" class="txt-color">Halaman Utama</a>
+                        </li>
+                        <li>
+                            <a href="#" class="txt-color">Halaman All Product</a>
+                        </li>
+                    </ul>
+                </div>
+            </li>
+            <li>
+                <a href="#" class="txt-color">Product</a>
+            </li>
+            <li>
+                <a href="#" class="txt-color">User</a>
+            </li>
+        </ul>
+    </section>
+
+
+    <script>
+        var dropSubMenu = document.getElementById('drop-submenu');
+        dropSubMenu.addEventListener('click', function(){
+            var cek = document.querySelector('.nav-vertical #subMenu');
+            var getCSS = getComputedStyle(cek);
+            
+            var displaynya = getCSS.display;
+    
+            if (displaynya === 'none') {
+                document.querySelector('#subMenu').style.display = 'block';
+            }else{
+                document.querySelector('#subMenu').style.display = 'none';
+            }
+        });
+    </script>
+
+</body>
+
+</html>

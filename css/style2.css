@@ -6,12 +6,16 @@
 }
 
 
+/* Penutup CSS yang digunakan banyak tempat */
+
+
 /* CSS untuk Navigasi Bar */
 
 .navigasi{
     width: 100%;
     display: flex;
     padding: 8px 0;
+    z-index: 1;
 }
 
 .navigasi a{
@@ -25,7 +29,7 @@
     padding: 14px 16px;
 }
 
-.navigasi .branded span{
+.navigasi .branded{
     color: #ffa31a;
 }
 
@@ -204,6 +208,64 @@
 
 /* Penutup CSS Halaman Utama */ 
 
+
+
+
+/* navigasi Vertical untuk Halaman Dashboard */
+
+.nav-vertical{
+    position: absolute;
+    float: left;
+    display: block;
+    height: 100%;
+    width: 20%;
+}
+
+.nav-vertical ul{
+    margin-top: 65px;
+}
+
+.nav-vertical li{
+    
+    list-style-type: none;
+}
+
+.nav-vertical li a{
+    display: inline-block;
+    text-decoration: none;
+    width: 100%;
+    padding: 15px 15px;
+    font-family: sans-serif;
+    border: 1px solid rgb(245, 164, 99);
+}
+
+.nav-vertical li a:hover{
+    background-color: rgb(250, 79, 49);
+}
+
+.nav-vertical li a > span{
+    margin-left: 155px;
+}
+
+#subMenu{
+    margin-top: -66px;
+    display: none;
+}
+
+#subMenu li a{
+    padding-left: 30px;
+}
+
+
+/* Penutup CSS navigasi Vertical Halaman Dashboard */
+
+
+
+
+
+
+
+
 /* Grid System Desktop*/
 .row::after{
     content : "";
@@ -264,3 +326,27 @@
 }
 
 /* Penutup Grid Syste */
+
+
+
+
+/* CSS yang digunakan banyak Tempat */
+
+.position-fi{
+    position: fixed !important;
+}
+
+/* Tempat Background Color */
+.color-bg{
+    background-color: rgb(247, 151, 34) !important;
+}
+
+/* Penutup background-color */
+
+/* Font Color */
+
+.txt-color{
+    color: white !important;
+}
+
+/* Penutup Font Color */
